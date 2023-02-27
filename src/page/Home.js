@@ -3,10 +3,10 @@ import Navbar from "../components/Navbar";
 
 const Home=()=>{
     return(
-        <div className="bg-home d-flex justify-content-center">
+        <div className="bg-home ">
             <Navbar/>
-            <div className="row container ">
-               <div className="home-container">
+            <div className=" container ">
+               <div className="containerAll centre">
                 <div className="texte-home">
                     <div>
                         <h5>So, you want to travel to</h5>
@@ -20,7 +20,7 @@ const Home=()=>{
                 </div>
 
                </div>
-               <div className="explore-container d-flex justify-content-center align-items-end ">
+               <div className="explore-container d-flex justify-content-center align-items-center ">
                 <div className="explore rounded-circle  d-flex align-items-center justify-content-center " id="explore">
                 <h3>
 

@@ -24,9 +24,9 @@ const Crew = () => {
       <div>
         <h4>02 MEET YOUR CREW</h4>
       </div>
-      <div className="container row">
-        <div className="container-tekno">
-          <div>
+      <div className="container d-flex centre">
+        <div className="containerAll">
+          <div className="d-flex flex-column">
             <h6>{currentCrew.role}</h6>
             <h1>{currentCrew.name}</h1>
             <p>{currentCrew.bio}</p>
@@ -43,8 +43,12 @@ const Crew = () => {
             ))}
           </div>
         </div>
-        <div className="container-tekno">
+
+        <div className="containerAll"  id="containerAll">
+         
+
             {currentCrew.images && <img src={currentCrew.images.png} alt={currentCrew.name}/>}
+          
         </div>
       </div>
     </div>

@@ -1,0 +1,40 @@
+#navbarHome {
+    /* position: absolute; */
+    width: 100%;
+    height: 96px;
+    display: flex;
+   flex-wrap: nowrap;
+    background-color: transparent;
+    backdrop-filter: blur(10px);
+    margin-bottom: 5rem;
+    border: #61dafb 1px solid;
+  }
+
+  .text-navbar div {
+    padding: 10px;
+    margin: 10px;
+    display: flex;
+    justify-content: flex-end;
+  }
+  .text-navbar div p {
+    text-decoration: none;
+    color: white;
+    margin-bottom: 0;
+  }
+  .logo {
+    /* align-self: start; */
+  
+  }
+  .containerNav{
+    width: 80%;
+  }
+
+  .navbar__line {
+    z-index: 1;
+    height: 1px;
+    width: 100%;
+    background: #ffffff;
+    mix-blend-mode: normal;
+    opacity: 0.25;
+    margin: 0 -15px 0 10px;
+  }

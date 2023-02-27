@@ -24,8 +24,8 @@ const Technology = () => {
         <div>
           <h4>03 space loach 101</h4>
         </div>
-        <div className="container row">
-          <div className="container-tekno d-flex">
+        <div className="container ">
+          <div className="containerAll d-flex centre">
             <div className="menu d-flex flex-column">
               {tekno.map((t, index) => (
                 <div key={index} className="rounded-circle border border-white w-50 p-3" onClick={() => handleTeknoChange(index)}>
@@ -39,7 +39,7 @@ const Technology = () => {
               <p>{currentTekno.description}</p>
             </div>
           </div>
-          <div className="container-tekno">
+          <div className="containerAll" id="containerImgTekno">
             {/* <img src={currentTekno.images.portrait} alt={currentTekno.name} /> */}
             {currentTekno.images && <img src={currentTekno.images.portrait} alt={currentTekno.name} />}
           </div>

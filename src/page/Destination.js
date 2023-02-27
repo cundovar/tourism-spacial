@@ -47,13 +47,15 @@ const Destination = () => {
       const [description, setDescription] = useState("");
       const [distance, setDistance] = useState("");
       const [travel, setTravel] = useState("");
+
+      
     
   
     return (
       <div className="bg-destination">
         <Navbar />
-        <div className="destination__content--text border row" id="row">
-          <div className="container-planet">
+        <div className="container border ">
+          <div className="containerAll centre">
             <div>
               <h5>01 PICK YOUR DESTINATION</h5>
             </div>
@@ -67,7 +69,7 @@ const Destination = () => {
               />
             </div>
           </div>
-          <div className="container-plane">
+          <div className="containerAll">
             <nav className="navbar ">
               {destinations.map(destination => (
                 <h6
