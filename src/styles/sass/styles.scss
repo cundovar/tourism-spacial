@@ -1,17 +1,19 @@
 @import url('./components/navbar.scss');
 @import url('./components/imageFond.scss');
-@import url('./components/technology.scss');
 @import url('./mixins/mixins.scss');
-
+@import url('./home.scss');
+@import url('./crew.scss');
+@import url('./destination.scss');
+@import url('./technology.scss');
 
 body {
     font-family: Bellefair;
     color: white;
     h1 {
-        // font-size: 150px;
+        font-size: 11rem;
       }
       h2 {
-        font-size: 100px;
+        font-size: 7rem;
       }
       h3 {
         font-size: 56px;
@@ -27,6 +29,9 @@ body {
         font-size: 18px;
         letter-spacing: 2.7px;
       }
+      div h5{
+        margin-left: 2rem;
+    }
 
       .container {
         display: flex;
@@ -65,5 +70,6 @@ body {
     display: flex;
     align-items: center;
     justify-content: center;
+    flex-direction: column;
   }
 

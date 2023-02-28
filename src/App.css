@@ -34,38 +34,7 @@
 }
 
 
-.destination div div {
-  margin-left: 2rem;
-}
 
-.destination {
-  width: 100%;
-}
-.navbar h6{
-  cursor: pointer;
-}
-.destination__select {
-  display: inline-block;
-}
-.destination__select::after {
-  content: "";
-  margin-top: 12px;
-  display: block;
-  width: 0;
-  height: 3px;
-  background: rgba(255, 255, 255, 0.4);
-  -webkit-transition: width 0.3s;
-  transition: width 0.3s;
-}
-.destination__select:hover::after {
-  width: 100%;
-}
-
-.nav-text--active {
-  border-color: #ffffff;
-  border-bottom: solid;
-  padding-bottom: 12px;
-}
 #picture{
 
 left: 230px;

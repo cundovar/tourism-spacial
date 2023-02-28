@@ -6,8 +6,8 @@ const Home=()=>{
         <div className="bg-home ">
             <Navbar/>
             <div className=" container ">
-               <div className="containerAll centre">
-                <div className="texte-home">
+               <div className="containerAll ">
+                <div className="texte-home centre">
                     <div>
                         <h5>So, you want to travel to</h5>
                     </div>
