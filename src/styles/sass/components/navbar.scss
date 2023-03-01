@@ -41,3 +41,15 @@
     opacity: 0.25;
     margin: 0 -15px 0 10px;
   }
+  .navPrincipal{
+    height: 100%;
+  
+    padding: 3rem;
+  }
+  .navPrincipal:hover{
+
+border-bottom: #6b6363 solid 2px;
+  }
+  .navPrincipal-active{
+    border-bottom: #ffffff solid 2px;
+  }

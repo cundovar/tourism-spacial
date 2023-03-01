@@ -5,6 +5,7 @@ import axios from "axios";
 const Destination = () => {
   const [currentDestination, setCurrentDestination] = useState({});
   const [destinations, setDestinations] = useState([]);
+  
 
   useEffect(() => {
     fetch("data.json")

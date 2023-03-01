@@ -1,5 +1,21 @@
-#containerImgTekno{
+
+.tekno-container{
     display: flex;
-    justify-content: end;
-    align-items: end;
+    flex-direction: row;
+}
+.butonCircle{
+    border: 1px solid white;
+    width: 3rem;
+    height: 3rem;
+   margin-bottom: 1rem;
+    border-radius: 50%;
+    display:flex;
+    justify-content: center;
+    align-items: center;
+    margin-right: 2rem;
+    cursor: pointer;
+}
+.selectedTekno{
+    color: black;
+    background-color: white;
 }
