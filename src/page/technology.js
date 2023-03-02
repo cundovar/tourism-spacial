@@ -17,7 +17,7 @@ const Technology = () => {
   
     const handleTeknoChange = (teknoIndex) => {
       setCurrentTekno(tekno[teknoIndex]);
-      setSelectedTeknoIndex(teknoIndex)
+      setSelectedTeknoIndex(teknoIndex);
     }
   
     return (
