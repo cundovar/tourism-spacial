@@ -7,6 +7,7 @@
 }
 .bg-destination {
   background-image: url("./images/destination/background-destination-desktop.jpg");
+  
 
 }
 .bg-crew {
@@ -20,18 +21,17 @@
  
 }
 
+@media screen and (max-width: 800px){
+    .bg-destination{
+      background-image: url("./images/destination/background-destination-mobile.jpg");
+    }
+    .bg-tekno{
+      background-image: url("./images/technology/background-technology-mobile.jpg");
+    }
+}
 
 
-.explore {
-  width: 274px;
-  height: 274px;
-  left: 1001px;
-  top: 495px;
-  background-color: azure;
-}
-#explore {
-  color: black;
-}
+
 
 
 

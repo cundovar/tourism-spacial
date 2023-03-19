@@ -26,7 +26,7 @@ const Technology = () => {
         <div>
           <h4>03 space loach 101</h4>
         </div>
-        <div className="container ">
+        <div className="container containerTekno ">
           <div className="containerAll d-flex justify-content-center align-items-center">
             <div className="menu d-flex flex-column justify-content-center align-items-center">
               {tekno.map((t, index) => (
@@ -35,8 +35,8 @@ const Technology = () => {
                 </div>
               ))}
             </div>
-            <div>
-              <h6>{currentTekno.name}</h6>
+            <div className="teknoText">
+              <h5>{currentTekno.name}</h5>
               <h3>{currentTekno.name}</h3>
               <p>{currentTekno.description}</p>
             </div>

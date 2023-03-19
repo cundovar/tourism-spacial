@@ -53,12 +53,13 @@ const Destination = () => {
   const [travel, setTravel] = useState("");
 
   return (
-    <div className="bg-destination">
+    <div className="bg-destination ">
       <Navbar />
+      <section>
           <div>
-            <h5>01 PICK YOUR DESTINATION</h5>
+            <h4>01 PICK YOUR DESTINATION</h4>
           </div>
-      <div className="container border ">
+      <div className="container">
         <div className="containerAll centre">
           <div>
             <img
@@ -70,7 +71,7 @@ const Destination = () => {
           </div>
         </div>
         <div className="containerAll ">
-          <nav className="navbar ">
+          <nav className="navbar " id="navDestination">
             {destinations.map((destination) => (
               <h6
                 key={destination.name}
@@ -106,6 +107,7 @@ const Destination = () => {
           </div>
         </div>
       </div>
+      </section>
     </div>
   );
 };

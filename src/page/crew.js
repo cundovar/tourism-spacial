@@ -26,7 +26,7 @@ const Crew = () => {
       <div>
         <h4>02 MEET YOUR CREW</h4>
       </div>
-      <div className="container d-flex ">
+      <div className="container d-flex  containerCrew">
         <div className="containerAll centre">
           <div className=" texte-container d-flex flex-column">
             <h4>{currentCrew.role}</h4>

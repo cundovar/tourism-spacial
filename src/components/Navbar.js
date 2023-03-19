@@ -35,7 +35,8 @@ return (
 <div className="containerNav">
 <div className="text-navbar d-flex justify-content-end">
 <div className={`navPrincipal ${activeIndex === 0 ? "navPrincipal-active" : ""}`}>
-<NavLink to="/" onClick={() => setActiveIndex(0)} activeClassName="navPrincipal-active">
+<NavLink to="/" onClick={() => setActiveIndex(0)} activeClassName="navPrincipal-active"
+  style={{ textDecoration: 'none' }}>
 <p>00 HOME</p>
 </NavLink>
 </div>
@@ -44,6 +45,7 @@ return (
 to="/destination"
 onClick={() => setActiveIndex(1)}
 activeClassName="navPrincipal-active"
+style={{ textDecoration: 'none' }}
 >
 <p>01 DESTINATION</p>
 </NavLink>
@@ -53,6 +55,7 @@ activeClassName="navPrincipal-active"
 to="/equipe"
 onClick={() => setActiveIndex(2)}
 activeClassName="navPrincipal-active"
+style={{ textDecoration: 'none' }}
 >
 <p>02 CREW</p>
 </NavLink>
@@ -62,6 +65,7 @@ activeClassName="navPrincipal-active"
 to="/technologie"
 onClick={() => setActiveIndex(3)}
 activeClassName="navPrincipal-active"
+style={{ textDecoration: 'none' }}
 >
 <p>03 TECHNOLOGY</p>
 </NavLink>

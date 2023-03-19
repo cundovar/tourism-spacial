@@ -6,8 +6,10 @@
    flex-wrap: nowrap;
     background-color: transparent;
     backdrop-filter: blur(10px);
-    margin-bottom: 5rem;
-    border: #61dafb 1px solid;
+    margin-bottom: 3rem;
+  
+    filter : grayscale(100%)
+
   }
 
   .text-navbar div {
@@ -21,10 +23,8 @@
     color: white;
     margin-bottom: 0;
   }
-  .logo {
-    /* align-self: start; */
+
   
-  }
   .containerNav{
     width: 80%;
   }
