@@ -57,7 +57,7 @@ const Destination = () => {
       <Navbar />
       <section>
           <div>
-            <h4>01 PICK YOUR DESTINATION</h4>
+            <h4> <span className="number">01</span> PICK YOUR DESTINATION</h4>
           </div>
       <div className="container">
         <div className="containerAll centre">

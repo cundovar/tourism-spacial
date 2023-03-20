@@ -6,10 +6,15 @@
 @import url('./destination.scss');
 @import url('./technology.scss');
 
+
+html{
+  max-height: 100%
+}
 body {
  
     font-family: Bellefair;
     color: white;
+ 
     h1 {
         font-size: 11rem;
       }
@@ -33,7 +38,11 @@ body {
       div h4{
         margin-left: 2rem;
       }
-      
+        .number{
+            color: rgb(139, 146, 146);
+            text-transform: uppercase;
+           
+          }
       .container {
         display: flex;
       
@@ -43,7 +52,7 @@ body {
         // height: 600px;
         // flex-wrap: wrap;
         max-width: 100%;
-        max-height: 100%;
+        min-height: 100%;
         overflow: hidden;
         // flex-wrap: wrap;
 
@@ -68,10 +77,7 @@ body {
           max-width: 80%;
             max-height: 100%;
             object-fit: cover; 
-            @media screen and (max-width: 800px){
-              width: 100%;
-            }
-      
+          
           }
           #containerAll{
             display: flex;
@@ -86,6 +92,10 @@ body {
             height: auto;
             width: 100%;
             margin: 0;
+
+            p{
+              color: rgb(174, 172, 169);
+            }
           
           }
           h4{
@@ -104,9 +114,14 @@ body {
           
 
           }
+        
       
           
          
+        }
+        section{
+          min-height: 100%;
+          margin: auto;
         }
         
       }

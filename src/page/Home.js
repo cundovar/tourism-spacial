@@ -21,7 +21,7 @@ const Home = () => {
               <h4>So, you want to travel to</h4>
             </div>
             <div className="titreHome">
-              <h1>SPACE</h1>
+              <h1 >SPACE</h1>
             </div>
             <div>
               <p>

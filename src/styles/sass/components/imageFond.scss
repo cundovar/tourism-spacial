@@ -1,10 +1,11 @@
 .bg-home,.bg-destination,.bg-crew,.bg-tekno{
     min-width: 100%;
-    min-height: 100%;
+   min-height: 100vh;
     background-repeat: no-repeat;
     background-size: cover;
     display: flex;
-    justify-content: center;
-    align-items: center;
+
+ 
     flex-direction: column;
+  
 }

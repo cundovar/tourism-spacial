@@ -24,7 +24,7 @@ const Technology = () => {
       <div className="bg-tekno">
         <Navbar />
         <div>
-          <h4>03 space loach 101</h4>
+          <h4><span className="number"> 03 </span>SPACE LOACH 101</h4>
         </div>
         <div className="container containerTekno ">
           <div className="containerAll d-flex justify-content-center align-items-center">
@@ -36,7 +36,7 @@ const Technology = () => {
               ))}
             </div>
             <div className="teknoText">
-              <h5>{currentTekno.name}</h5>
+              <h5 className="number"> the technology...</h5>
               <h3>{currentTekno.name}</h3>
               <p>{currentTekno.description}</p>
             </div>

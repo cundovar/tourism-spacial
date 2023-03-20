@@ -1,6 +1,6 @@
 
 .butonCircle{
-    border: 1px solid white;
+    border: 1px solid rgb(91, 90, 90);
     width: 3rem;
     height: 3rem;
    margin-bottom: 1rem;
@@ -10,6 +10,9 @@
     align-items: center;
     margin-right: 2rem;
     cursor: pointer;
+}
+.butonCircle:hover{
+    border: 1px solid white;
 }
 .selectedTekno{
     color: black;

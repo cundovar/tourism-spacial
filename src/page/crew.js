@@ -24,12 +24,12 @@ const Crew = () => {
     <div className="bg-crew">
       <Navbar />
       <div>
-        <h4>02 MEET YOUR CREW</h4>
+        <h4> <span className="number">02</span> MEET YOUR CREW</h4>
       </div>
       <div className="container d-flex  containerCrew">
         <div className="containerAll centre">
           <div className=" texte-container d-flex flex-column">
-            <h4>{currentCrew.role}</h4>
+            <h4 className="number">{currentCrew.role}</h4>
             <h2>{currentCrew.name}</h2>
             <p>{currentCrew.bio}</p>
           </div>

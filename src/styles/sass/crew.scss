@@ -9,10 +9,11 @@
     transition: all .5s;
     cursor: pointer; 
   
-    &:hover {
-      background-color: #d0d6f9;
-      opacity: 1; }
   }
+  
+  .bouton:hover {
+   
+    opacity: .5; }
 
 
       .boutonDiv{
@@ -37,6 +38,8 @@
 }
 
 
+
+
 @media screen and (max-width: 800px){
   .containerCrew{
     flex-direction: column-reverse !important;
@@ -48,5 +51,16 @@
   #containerAll{
     text-align: center;
     margin: auto;
-    border-bottom: solid 1px#d0d6f9;}
+    border-bottom: solid 1px#d0d6f9;
+ margin-bottom: 0;
+     height: 20rem;
+  }
+  #containerAll img{
+    margin-bottom: 0;
+    max-width: 100%;
+ height: auto;
+
+
+  }
 }
+
