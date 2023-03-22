@@ -43,10 +43,7 @@ body .number {
 body .container {
   display: flex;
   justify-content: center;
-  border: #61dafb solid 1px;
   max-width: 100%;
-  min-height: 100%;
-  overflow: hidden;
 }
 body .container .containerAll {
   width: 50%;

@@ -3,6 +3,7 @@ import { NavLink, useLocation } from "react-router-dom";
 
 const Navbar = () => {
   const [activeIndex, setActiveIndex] = useState(0);
+  const [menuOpen, setMenuOpen]=useState(false)
   const location = useLocation();
 
   useEffect(() => {
@@ -23,15 +24,22 @@ const Navbar = () => {
         setActiveIndex(0);
     }
   }, [location.pathname]);
+  const toggleMenu = () => {
+    setMenuOpen(!menuOpen);
+    };
 
   return (
-    <div className="navbar d-flex align-items-center" id="navbarHome">
+     <div className="headerNav">
+
+
+      <a id="link" href="#" ><span id="burger1" onClick={toggleMenu}></span></a>
+  
       <div className="logo">
         <img src="./images/shared/logo.svg" alt="Logo" />
       </div>
       <div className="navbar__line"></div>
-      <div className="containerNav">
-        <div className="text-navbar d-flex justify-content-end">
+     
+        <div className="text-navbar d-flex justify-content-end"id="menuContent">
           <div
             className={`navPrincipal ${
               activeIndex === 0 ? "navPrincipal-active" : ""
@@ -39,7 +47,10 @@ const Navbar = () => {
           >
             <NavLink
               to="/"
-              onClick={() => setActiveIndex(0)}
+              onClick={() =>{
+                 setActiveIndex(0);
+                 toggleMenu(); // masquer le menu sur mobile après avoir cliqué sur le lien
+              }}
               activeClassName="navPrincipal-active"
               style={{ textDecoration: "none" }}
             >
@@ -56,7 +67,10 @@ const Navbar = () => {
           >
             <NavLink
               to="/destination"
-              onClick={() => setActiveIndex(1)}
+              onClick={() => {
+                setActiveIndex(1);
+                toggleMenu()
+              }}
               activeClassName="navPrincipal-active"
               style={{ textDecoration: "none" }}
             >
@@ -72,7 +86,9 @@ const Navbar = () => {
           >
             <NavLink
               to="/equipe"
-              onClick={() => setActiveIndex(2)}
+              onClick={() => {
+                setActiveIndex(2);
+                toggleMenu()}}
               activeClassName="navPrincipal-active"
               style={{ textDecoration: "none" }}
             >
@@ -88,7 +104,11 @@ const Navbar = () => {
           >
             <NavLink
               to="/technologie"
-              onClick={() => setActiveIndex(3)}
+              onClick={() => {
+                setActiveIndex(3);
+              toggleMenu();
+                
+              }}
               activeClassName="navPrincipal-active"
               style={{ textDecoration: "none" }}
             >
@@ -99,7 +119,8 @@ const Navbar = () => {
           </div>
         </div>
       </div>
-    </div>
+    
+  
   );
 };
 export default Navbar;
