@@ -69,18 +69,22 @@ border-bottom: #6b6363 solid 2px;
 @media screen and (max-width: 800px){
  
   #menuContent{
-    display: flex;
+   display: none !important;
+    
+  }
+  #menuContent.showMenu{
+    display: flex !important;
     flex-direction: column;
     position:absolute;
-  left: 170px;
+right: 0;
     background-color: transparent;
     backdrop-filter: blur(10px);
   
     border: 1px solid red;
     height: 100vh;
   justify-content:center !important;
+  z-index: 99;
   
-    
   }
 
     #burger1::before,
@@ -121,7 +125,8 @@ border-bottom: #6b6363 solid 2px;
     color: white;
     padding: 1rem;
   
-  position: absolute;left: 320px;
+  position: absolute;
+  right: 0;
 
     margin-top: 1.2rem;
     margin-right:1rem ;
@@ -151,7 +156,5 @@ border-bottom: #6b6363 solid 2px;
  
 
   }
-  .active{
-   
-  }
+
   

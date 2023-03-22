@@ -23,7 +23,7 @@ const Crew = () => {
   return (
     <div className="bg-crew">
       <Navbar />
-      <div>
+      <div className="titleContent">
         <h4> <span className="number">02</span> MEET YOUR CREW</h4>
       </div>
       <div className="container d-flex  containerCrew">

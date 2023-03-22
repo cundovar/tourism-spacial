@@ -77,9 +77,13 @@ body .container #containerAll {
     height: auto;
     width: 100%;
     margin: 0;
+    margin-top: 5rem;
   }
   body .container p {
     color: rgb(174, 172, 169);
+  }
+  body .titleContent {
+    margin-top: 5rem;
   }
   body h4 {
     font-size: 1rem;

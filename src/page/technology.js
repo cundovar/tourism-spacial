@@ -23,7 +23,7 @@ const Technology = () => {
     return (
       <div className="bg-tekno">
         <Navbar />
-        <div>
+        <div className="titleContent">
           <h4><span className="number"> 03 </span>SPACE LOACH 101</h4>
         </div>
         <div className="container containerTekno ">

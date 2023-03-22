@@ -17,7 +17,7 @@ const Home = () => {
       <div className="  containerHome ">
         <div className="containerAll " id="home">
           <div className="texte-home ">
-            <div>
+            <div className="titleContent">
               <h4>So, you want to travel to</h4>
             </div>
             <div className="titreHome">
