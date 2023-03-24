@@ -36,11 +36,19 @@
     margin-top: 2rem;
 
 }
-#containerAll{
+
+
+
+#containerAll img{
+  margin-bottom: 0;
   max-width: 100%;
-  height: auto;
+  justify-self: end;
+ 
+
+
 
 }
+
 
 
 
@@ -54,10 +62,12 @@
     
   }
   #containerAll{
-    text-align: center;
-    margin: auto;
+  
+ 
     border-bottom: solid 1px#d0d6f9;
  margin-bottom: 0;
+
+
      height: 20rem;
   }
   #containerAll img{

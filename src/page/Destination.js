@@ -1,10 +1,11 @@
 import React, { useEffect, useState } from "react";
 import Navbar from "../components/Navbar";
 import axios from "axios";
-
+import { isEmpty } from "../components/utils/utils";
 const Destination = () => {
   const [currentDestination, setCurrentDestination] = useState({});
   const [destinations, setDestinations] = useState([]);
+
   
 
   useEffect(() => {
@@ -14,6 +15,7 @@ const Destination = () => {
         setDestinations(data.destinations);
         setCurrentDestination(data.destinations[0]);
       });
+ 
   }, []);
 
   useEffect(() => {
@@ -51,6 +53,10 @@ const Destination = () => {
   const [description, setDescription] = useState("");
   const [distance, setDistance] = useState("");
   const [travel, setTravel] = useState("");
+  const [loading,setLoading]=useState(false)
+  useEffect(()=>{
+    !isEmpty(pictureSrc[0]) && setLoading(false)
+  },[pictureSrc])
 
   return (
     <div className="bg-destination ">
@@ -62,12 +68,16 @@ const Destination = () => {
       <div className="container">
         <div className="containerAll centre">
           <div>
+            {loading ?(
+              <i className="fas fa-spinner fa-spin"></i>
+            ):(
             <img
               id="picture"
               className="destination__content--planet"
               src={pictureSrc}
               alt=""
             />
+            )}
           </div>
         </div>
         <div className="containerAll ">

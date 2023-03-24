@@ -11,6 +11,18 @@
   
 
   }
+  .headerNav{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    width: 100%;
+    
+    margin-bottom: 3rem;
+  }
+  .logo{
+ position: absolute;
+ left: 2rem;
+  }
 
   .text-navbar div {
     padding: 10px;
@@ -65,25 +77,41 @@ border-bottom: #6b6363 solid 2px;
   background-color: transparent;
   backdrop-filter: blur(10px);
   }
+
 }
 @media screen and (max-width: 800px){
- 
+ .headerNav{
+  display: block;}
+ .logo{
+  
+ margin-top: 0.6rem;
+ }
+ .logo img{
+  width: 2rem;
+ }
   #menuContent{
-   display: none !important;
+ display: none !important;
+   
+   transition: right .5s ease; 
+   flex-direction: column;
+   position:absolute;
+
+   background-color: transparent;
+   backdrop-filter: blur(10px);
+ 
+  /*
+  
+  border: 1px solid red;
+  */  
+   height: 100vh;
+ justify-content:center !important;
+ z-index: 99;
     
   }
   #menuContent.showMenu{
     display: flex !important;
-    flex-direction: column;
-    position:absolute;
-right: 0;
-    background-color: transparent;
-    backdrop-filter: blur(10px);
-  
-    border: 1px solid red;
-    height: 100vh;
-  justify-content:center !important;
-  z-index: 99;
+ right: 0;
+   
   
   }
 
@@ -132,7 +160,10 @@ right: 0;
     margin-right:1rem ;
     z-index: 100;
     position: absolute;
+    /*
+    
     border: solid 1px greenyellow;
+    */ 
    
   }
   #burger1 {
@@ -146,12 +177,16 @@ right: 0;
   }
   .logo{
     position: absolute;
+    top: 1rem;
   
   }
    .navPrincipal{
   border: none;
   height: auto;
    
+  }
+  .navbar__line{
+    display: none;
   }
  
 

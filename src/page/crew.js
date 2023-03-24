@@ -5,6 +5,7 @@ const Crew = () => {
   const [currentCrew, setCurrentCrew] = useState({});
   const [crew, setCrew] = useState([]);
   const [selectedCrewIndex, setSelectedCrewIndex] = useState(0);
+  const [loading, setLoading] = useState(true);
 
   useEffect(() => {
     fetch("data.json")
@@ -12,6 +13,7 @@ const Crew = () => {
       .then((data) => {
         setCrew(data.crew);
         setCurrentCrew(data.crew[0]);
+        setLoading(false);
       });
     }, []);
     
@@ -49,9 +51,13 @@ const Crew = () => {
 
 
         <div className="containerAll" id="containerAll">
-          {currentCrew.images && (
+        {loading ? (
+        <div className="spinner"> <h4>hhLoading...</h4></div>
+      ) : (
+       
             <img src={currentCrew.images.png} alt={currentCrew.name} />
-          )}
+          
+      )}
         </div>
       </div>
     </div>
