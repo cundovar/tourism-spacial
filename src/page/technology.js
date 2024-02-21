@@ -21,31 +21,42 @@ const Technology = () => {
     }
   
     return (
-      <div className="bg-tekno">
+      <div className="bg-tekno  bg">
         <Navbar />
+        <div className="d-flex border all-tekno">
+          <div className="section-vide"></div>
+        <div className="section-tekno">
         <div className="titleContent">
           <h4><span className="number"> 03 </span>SPACE LOACH 101</h4>
         </div>
+        <div className="total-section-tekno">
+        <div className="section-vide2"></div>
         <div className="container containerTekno ">
-          <div className="containerAll d-flex justify-content-center align-items-center">
-            <div className="menu d-flex flex-column justify-content-center align-items-center">
+          <div className="containerAll d-flex justify-content-center border align-items-center">
+            <div className="menu border d-flex flex-column justify-content-center align-items-center">
               {tekno.map((t, index) => (
                 <div key={index} className={ `butonCircle ${selectedTeknoIndex===index ? 'selectedTekno':''}`} onClick={() => handleTeknoChange(index)}>
                   {index + 1}
                 </div>
               ))}
             </div>
-            <div className="teknoText">
+            <div className="teknoText border">
               <h5 className="number"> the technology...</h5>
               <h3>{currentTekno.name}</h3>
-              <p>{currentTekno.description}</p>
+              <p className="desc-tekno">{currentTekno.description}</p>
             </div>
           </div>
-          <div className="containerAll d-flex justify-content-center align-items-center" >
+          <div className="containerAll d-flex justify-content-end border align-items-end" >
             {/* <img src={currentTekno.images.portrait} alt={currentTekno.name} /> */}
             {currentTekno.images && <img src={currentTekno.images.portrait} alt={currentTekno.name} />}
           </div>
         </div>
+
+        </div>
+        </div>
+        </div>
+
+          
       </div>
     );
   };

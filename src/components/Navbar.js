@@ -2,12 +2,13 @@ import React, { useState, useEffect } from "react";
 import { NavLink, useLocation } from "react-router-dom";
 
 const Navbar = () => {
+  
   const [activeIndex, setActiveIndex] = useState(0);
 
   const location = useLocation();
   const toggleMenu = () => {
-    const menu = document.getElementById("menuContent");
-    const barre = document.getElementById("burger1");
+    const menu = document.getElementById(" menuContent");
+    const barre = document.getElementById( "burger1");
     menu.classList.toggle("showMenu");
     barre.classList.toggle("opene");
   };

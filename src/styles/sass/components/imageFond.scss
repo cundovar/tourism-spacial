@@ -9,9 +9,16 @@
 }
 @media screen and (min-width: 801px) {
 
-    .bg-home,.bg-destination{
+    .bg-home,.bg-destination,.bg-crew,.bg-tekno{
    height: 100vh;
+}
+.container{
+    max-height: 75%;
+    justify-content: center;
+    align-items: center;
+   
     }
+   
 
    
  }

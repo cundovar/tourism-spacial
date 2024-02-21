@@ -10,7 +10,43 @@
     cursor: pointer; 
   
   }
-  
+  .bg-crew{
+    border: 1px red solid;
+
+  }
+  .main-crew{
+    width: 100%;
+    height: 90%;
+
+border: violet solid 2px;
+    display: flex;
+    justify-content: center;
+    align-items: end;
+    
+  }
+  .section-crew{
+   
+    margin:auto ;
+    border: 1px solid black;
+    width: 80%;
+   height: 80%;
+ 
+
+
+  }
+  .crewimg{
+    height: 100%;
+    border: yellow solid 2px;
+    img{
+     height: 100%;
+    }
+  }
+  .containerCrew{
+ justify-self: end;
+  }
+  #h2Crew{
+    font-size: 4rem;
+  }
   .bouton:hover {
    
     opacity: .5; }
@@ -22,6 +58,7 @@
     display: -ms-flexbox;
     display: flex;
     gap: 15px; 
+
       }
 .selected {
   background-color: white;
@@ -51,6 +88,10 @@
 
 
 
+@media screen and (min-width:801px){
+ 
+   
+  }
 
 
 @media screen and (max-width: 800px){

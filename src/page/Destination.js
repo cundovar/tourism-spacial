@@ -61,7 +61,7 @@ const Destination = () => {
   return (
     <div className="bg-destination ">
       <Navbar />
-      <section>
+ 
           <div className="titleContent">
             <h4> <span className="number">01</span> PICK YOUR DESTINATION</h4>
           </div>
@@ -117,7 +117,7 @@ const Destination = () => {
           </div>
         </div>
       </div>
-      </section>
+
     </div>
   );
 };

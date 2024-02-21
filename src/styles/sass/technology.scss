@@ -11,8 +11,51 @@
     margin-right: 2rem;
     cursor: pointer;
 }
+.all-tekno{
+    max-height: 100%;
+}
+.total-section-tekno{
+    width: 100%;
+    border: 1px rgb(255, 0, 187) solid;
+    display: flex;
+    height: 100%;
+    display: flex;
+   
+    align-items: center;
+}
+.containerTekno{
+    border: 1px yellow solid;
+    padding: 0;
+
+    
+    
+}
+*{
+    border: red 1px solid;
+}
+
+.section-vide{
+    width: 10%;
+}
+.section-vide2{
+    width: 5%;
+}
+.section-tekno{
+    width: 90%;
+    border: 1px solid green;
+    height: 100%;
+    margin: auto;
+}
 .butonCircle:hover{
     border: 1px solid white;
+}
+.desc-tekno{
+    width: 70%;
+}
+.bg{
+    overflow: hidden;
+  
+
 }
 .selectedTekno{
     color: black;
@@ -20,19 +63,27 @@
 }
 
 @media screen and (max-width: 800px){
-   .containerAll .menu{
-   display: flex !important;
-   flex-direction: row !important;
-   margin-top:1rem;
-   }
+    .containerAll .menu{
+        display: flex !important;
+        flex-direction: row !important;
+        margin-top:1rem;
+    }
+    .desc-tekno{
+        width: 100%;
+    }
    .teknoText{
     margin-top: 1rem;
     text-align: center;
 
 
    }
+   .section-vide{
+ 
+    width: 0;
+   }
    .containerTekno{
     flex-direction: column-reverse !important;
+
    }
    .texte-container h2{
     font-size: 2.1rem;

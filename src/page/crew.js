@@ -15,50 +15,61 @@ const Crew = () => {
         setCurrentCrew(data.crew[0]);
         setLoading(false);
       });
-    }, []);
-    
-    const handleChangeCrew = (crewIndex) => {
-      setCurrentCrew(crew[crewIndex]);
-      setSelectedCrewIndex(crewIndex);
+  }, []);
+
+  const handleChangeCrew = (crewIndex) => {
+    setCurrentCrew(crew[crewIndex]);
+    setSelectedCrewIndex(crewIndex);
   };
 
   return (
-    <div className="bg-crew">
+    <div className="bg-crew ">
       <Navbar />
+      <div className="section-crew">
       <div className="titleContent">
-        <h4> <span className="number">02</span> MEET YOUR CREW</h4>
+        <h4>
+          {" "}
+          <span className="number">02</span> MEET YOUR CREW
+        </h4>
       </div>
+      <div className="main-crew">
       <div className="container d-flex  containerCrew">
         <div className="containerAll centre">
           <div className=" texte-container d-flex flex-column">
             <h4 className="number">{currentCrew.role}</h4>
-            <h2>{currentCrew.name}</h2>
+            <h2 id="h2Crew">{currentCrew.name}</h2>
             <p>{currentCrew.bio}</p>
           </div>
-        <div className="d-flex boutonDiv">
-          {crew.map((t, index) => (
-            <div
-              key={index}
-              className={`bouton ${selectedCrewIndex === index ? 'selected' : ''}`}
-              onClick={() =>  {setCurrentCrew(crew[index]);
-                setSelectedCrewIndex(index);}}
-            >
-            
+          <div className="d-flex boutonDiv">
+            {crew.map((t, index) => (
+              <div
+                key={index}
+                className={`bouton ${
+                  selectedCrewIndex === index ? "selected" : ""
+                }`}
+                onClick={() => {
+                  setCurrentCrew(crew[index]);
+                  setSelectedCrewIndex(index);
+                }}
+              ></div>
+            ))}
+          </div>
+        </div>
+
+        <div className="containerAll crewimg" id="containerAll">
+          {loading ? (
+            <div className="spinner">
+              {" "}
+              <h4>Loading...</h4>
             </div>
-          ))}
+          ) : (
+            <img className="img-crew border" src={currentCrew.images.png} alt={currentCrew.name} />
+          )}
         </div>
-        </div>
+      </div>
 
+      </div>
 
-        <div className="containerAll" id="containerAll">
-        {loading ? (
-        <div className="spinner"> <h4>hhLoading...</h4></div>
-      ) : (
-       
-            <img src={currentCrew.images.png} alt={currentCrew.name} />
-          
-      )}
-        </div>
       </div>
     </div>
   );
