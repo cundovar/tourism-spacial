@@ -23,24 +23,27 @@ const Crew = () => {
   };
 
   return (
-    <div className="bg-crew ">
+    <div className="bg-crew bg">
+      <div className="nav-crew">
+
       <Navbar />
+      </div>
       <div className="section-crew">
-      <div className="titleContent">
+      <div className="titleContent title-crew">
         <h4>
           {" "}
           <span className="number">02</span> MEET YOUR CREW
         </h4>
       </div>
       <div className="main-crew">
-      <div className="container d-flex  containerCrew">
-        <div className="containerAll centre">
-          <div className=" texte-container d-flex flex-column">
+      <div className=" d-flex  containerCrew">
+        <div className="containerAll centre responsive-content-text ">
+          <div className=" texte-container  d-flex flex-column">
             <h4 className="number">{currentCrew.role}</h4>
             <h2 id="h2Crew">{currentCrew.name}</h2>
             <p>{currentCrew.bio}</p>
           </div>
-          <div className="d-flex boutonDiv">
+          <div className="d-flex boutonDiv ">
             {crew.map((t, index) => (
               <div
                 key={index}
@@ -56,14 +59,14 @@ const Crew = () => {
           </div>
         </div>
 
-        <div className="containerAll crewimg" id="containerAll">
+        <div className="containerAll  crewimg" id="containerAll">
           {loading ? (
             <div className="spinner">
               {" "}
               <h4>Loading...</h4>
             </div>
           ) : (
-            <img className="img-crew border" src={currentCrew.images.png} alt={currentCrew.name} />
+            <img className="img-crew  " src={currentCrew.images.png} alt={currentCrew.name} />
           )}
         </div>
       </div>

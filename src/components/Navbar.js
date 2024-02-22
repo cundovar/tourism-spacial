@@ -7,7 +7,7 @@ const Navbar = () => {
 
   const location = useLocation();
   const toggleMenu = () => {
-    const menu = document.getElementById(" menuContent");
+    const menu = document.getElementById("menuContent");
     const barre = document.getElementById( "burger1");
     menu.classList.toggle("showMenu");
     barre.classList.toggle("opene");
@@ -43,7 +43,7 @@ const Navbar = () => {
       </div>
    
 
-      <div className="text-navbar d-flex justify-content-end" id="menuContent">
+      <div className="text-navbar d-flex justify-content-end  " id="menuContent">
         <div
           className={`navPrincipal ${
             activeIndex === 0 ? "navPrincipal-active" : ""
@@ -52,12 +52,12 @@ const Navbar = () => {
           <NavLink
             to="/"
             onClick={() => setActiveIndex(0)}
-            activeClassName="navPrincipal-active"
+      
             style={{ textDecoration: "none" }}
           >
             <p>
               {" "}
-              <span className="number">00</span> HOME
+              <span className="number" activeClassName="navPrincipal-active">00</span> HOME
             </p>
           </NavLink>
         </div>
@@ -69,11 +69,11 @@ const Navbar = () => {
           <NavLink
             to="/destination"
             onClick={() => setActiveIndex(1)}
-            activeClassName="navPrincipal-active"
+         
             style={{ textDecoration: "none" }}
           >
             <p>
-              <span className="number">01</span> DESTINATION
+              <span className="number"    activeClassName="navPrincipal-active">01</span> DESTINATION
             </p>
           </NavLink>
         </div>
@@ -85,11 +85,11 @@ const Navbar = () => {
           <NavLink
             to="/equipe"
             onClick={() => setActiveIndex(2)}
-            activeClassName="navPrincipal-active"
-            style={{ textDecoration: "none" }}
+            
+            style={{ textDecoration: "none"  }}
           >
             <p>
-              <span className="number">02</span> CREW
+              <span className="number" activeClassName="navPrincipal-active">02</span> CREW
             </p>
           </NavLink>
         </div>
@@ -101,11 +101,11 @@ const Navbar = () => {
           <NavLink
             to="/technologie"
             onClick={() => setActiveIndex(3)}
-            activeClassName="navPrincipal-active"
+            
             style={{ textDecoration: "none" }}
           >
             <p>
-              <span className="number">03</span> TECHNOLOGY
+              <span className="number" activeClassName="navPrincipal-active">03</span> TECHNOLOGY
             </p>
           </NavLink>
         </div>

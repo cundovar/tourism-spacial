@@ -12,11 +12,11 @@
     cursor: pointer;
 }
 .all-tekno{
-    max-height: 100%;
+    height: 100%;
 }
 .total-section-tekno{
     width: 100%;
-    border: 1px rgb(255, 0, 187) solid;
+
     display: flex;
     height: 100%;
     display: flex;
@@ -24,14 +24,20 @@
     align-items: center;
 }
 .containerTekno{
-    border: 1px yellow solid;
+ height: 100%;
     padding: 0;
 
     
     
 }
-*{
-    border: red 1px solid;
+.teknoText{
+    height: 100%;
+}
+.imgtek{
+    height: 100%;
+    img{
+        height: 100%;
+    }
 }
 
 .section-vide{
@@ -42,7 +48,7 @@
 }
 .section-tekno{
     width: 90%;
-    border: 1px solid green;
+ 
     height: 100%;
     margin: auto;
 }

@@ -11,7 +11,7 @@ const Home = () => {
   };
 
   return (
-    <div className="bg-home ">
+    <div className="bg-home bg ">
       <Navbar />
         <section>
       <div className="  containerHome ">
